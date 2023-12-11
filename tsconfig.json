@@ -5,10 +5,13 @@
 		"outDir": "out",
 		"sourceMap": true,
 		"strict": true,
-		"rootDir": "src"
+		"rootDir": "src",
+		"lib": ["ESNext"],
 	},
 	"exclude": [
-		"node_modules", 
-		".vscode-test"
-	]
+		"webview",
+
+		"node_modules",
+		".vscode-test",
+	],
 }

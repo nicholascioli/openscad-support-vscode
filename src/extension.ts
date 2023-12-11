@@ -26,7 +26,7 @@ export function activate(context: vscode.ExtensionContext): void {
     context.subscriptions.push(
         vscode.commands.registerCommand(
             'scad-lsp.preview',
-            (mainUri, allUris) => previewManager.openFile(mainUri, allUris)
+            (mainUri, allUris) => previewManager.watchFile(context.extensionUri, mainUri)
         )
     );
 
